@@ -60,7 +60,7 @@
 	function rmvCarrinho(codigoProduto) {
 		var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
 		$.ajax({
-			url: '/rmvCarrinho',
+			url: './rmvCarrinho',
 			type: 'POST',
 			data: {
 				_token: CSRF_TOKEN,

@@ -23,6 +23,10 @@ Route::resource('/', 'LojaController');
 
 Route::post('/addCarrinho','LojaController@adicionarCarrinho');
 
+Route::resource('/detalheoficial', 'Detalhe');
+
+Route::post('addCarrinho2', 'LojaController@detalheprodutofunc');
+
 Route::post('/buscar','LojaController@buscarCategoria');
 
 Route::post('/rmvCarrinho','CarrinhoController@removerCarrinho');

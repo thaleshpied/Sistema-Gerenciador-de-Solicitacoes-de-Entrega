@@ -58,4 +58,6 @@ class Produto extends Model
     {
         return $this->hasMany('App\PedidoProduto', 'codigoProduto', 'codigoProduto');
     }
+
+    
 }
